@@ -2,8 +2,8 @@ name: Dr Header Release Task
 
 on: 
   push:
-    branches: [ master ]
-
+    branches:
+      - master
 jobs:
   build:
     runs-on: ubuntu-latest
