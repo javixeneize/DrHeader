@@ -80,9 +80,4 @@ jobs:
           asset_name: DrHeader changelog
           asset_content_type: text/plain
 
-      - name: Publish
-        env:
-          TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
-          TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
-        run: |
-          twine upload dist/*
+  
